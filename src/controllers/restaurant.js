@@ -1,21 +1,23 @@
+const services = require("../services/restaurant");
+
 const getAll = (req, res) => {
-  console.log("Hello from get all");
+  const allRestaurants = services.getAllRestaurants();
   res.end();
 };
 const getOne = (req, res) => {
-  console.log("Hello from get one");
+  const oneRestaurant = services.getOneRestaurant();
   res.end();
 };
 const createOne = (req, res) => {
-  console.log("Hello from create one");
+  const newRestaurant = services.createNewRestaurant();
   res.end();
 };
 const updateOne = (req, res) => {
-  console.log("Hello from update one");
+  const updatedRestaurant = services.updateOneRestaurant();
   res.end();
 };
 const deleteOne = (req, res) => {
-  console.log("Hello from delete one");
+  const deletedRestaurant = services.deleteOneRestaurant();
   res.end();
 };
 
