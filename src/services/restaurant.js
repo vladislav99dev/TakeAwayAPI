@@ -1,17 +1,44 @@
+const Restaurant = require("../models/Restaurant");
+
 const getAllRestaurants = () => {
-    return;
+    try {
+        const restaurants = Restaurant.find();
+        return restaurants;
+    } catch (error) {
+        console.log(error);
+    }
 }
 const getOneRestaurant = () => {
-    return;
+    try {
+        const restaurant = Restaurant.findByOne();
+        return restaurant;
+    } catch (error) {
+        console.log(error);
+    }
 }
 const createNewRestaurant = () => {
-    return;
+    try {
+        const restaurant = Restaurant.create();
+        return restaurant;
+    } catch (error) {
+        console.log(error);
+    }
 }
 const updateOneRestaurant = () => {
-    return;
+    try {
+        const restaurant = Restaurant.findOneAndUpdate();
+        return restaurant;
+    } catch (error) {
+        console.log(error);
+    }
 }
 const deleteOneRestaurant = () => {
-    return;
+    try {
+        Restaurant.deleteOne();
+        return;
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 const services = {

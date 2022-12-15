@@ -3,9 +3,9 @@ const router = express.Router();
 
 const controller = require("../../controllers/restaurant");
 
-router.get("/", controller.getOne);
+router.get("/", controller.getAll);
 
-router.get("/:rastaurantId", controller.getAll);
+router.get("/:rastaurantId", controller.getOne);
 
 router.post("/", controller.createOne);
 
