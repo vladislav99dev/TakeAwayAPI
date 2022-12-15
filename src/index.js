@@ -14,6 +14,7 @@ app.use("/api/v1/restaurants", v1RestaurantRouter);
 db(process.env.DB_CONNECTION_STRING)
   .then((response) => {
     app.listen(PORT, () => {
+      console.log(`Api connected to AtlasDB`);
       console.log(`Api is up and running on ${PORT}`);
     });
   })
