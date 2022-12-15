@@ -1,6 +1,8 @@
 const express = require("express");
 const db = require("./config/db");
 
+require("dotenv").config({ path: ".env" });
+
 const v1RestaurantRouter = require("./v1/routes/restaurant");
 
 const app = express();
