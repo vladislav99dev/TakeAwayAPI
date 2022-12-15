@@ -2,6 +2,11 @@
 Express and AtlasDB used in this project
 
 /api/v1/restaunrants {
+
+
+
+
+
       GET  / {
              getAllRestaurants,
       }
