@@ -8,7 +8,9 @@ const v1RestaurantRouter = require("./v1/routes/restaurant");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+// app.use(express.urlencoded({extended: true}))
 
+app.use(express.json());
 app.use("/api/v1/restaurants", v1RestaurantRouter);
 
 db(process.env.DB_CONNECTION_STRING)
