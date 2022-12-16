@@ -9,6 +9,10 @@ const getOne = (req, res) => {
   res.end("Get one");
 };
 const createOne = (req, res) => {
+  const data = req.body;
+  
+
+
   const newRestaurant = services.createNewRestaurant();
   res.end("Create one");
 };
